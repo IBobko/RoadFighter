@@ -4,14 +4,16 @@ import android.content.Context;
 import android.opengl.GLSurfaceView;
 import android.view.MotionEvent;
 
+import uma.roadfighter.our.RoadFighterGLRendererOur;
+
 public class RoadFighterGLView extends GLSurfaceView {
-	RoadFighterGLRenderer renderer;
+	RoadFighterGLRendererOur renderer;
 	
 	RoadFighterGLView(Context context) {
 		super(context);
 		
 		// Renderer
-		renderer = new RoadFighterGLRenderer(context);
+		renderer = new RoadFighterGLRendererOur(context);
 		setRenderer(renderer);
 	}
 	
